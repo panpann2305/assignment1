@@ -6,7 +6,8 @@ background:linear-gradient(to bottom, rgb(207, 59, 133),rgb(225, 172, 212),rgb(1
 .title {
 color:rgb(255, 255, 255);
 font-family:montserrat;
-font-weight: 300;
+font-weight: 400;
+font-size: 250%;
 text-align:center;
 margin-top: 100px;
 }
@@ -16,7 +17,16 @@ display: flex;
 justify-content: space-between;
 color:rgb(255, 255, 255);
 font-family:montserrat;
-font-weight: 300;
+font-weight: 350;
 font-size: 120%;
 margin:30px;
+}
+
+.subtitle {
+text-align:center;
+color:rgb(255, 255, 255);
+font-family:montserrat;
+font-weight: 350;
+font-size: 120%;
+margin-top: 10px;
 }
