@@ -14,3 +14,21 @@ font-size: 200%;
 text-align:center;
 margin-top: 50px;
 }
+
+.topbar {
+display: flex;
+justify-content: space-evenly;
+color:white;
+font-family:montserrat;
+font-weight: 350;
+font-size: 120%;
+margin:30px;
+a {
+  color: white;            
+  text-decoration: none;   
+}
+a:hover {
+  color: #b2bce3;          
+  text-decoration: underline;
+}
+}
