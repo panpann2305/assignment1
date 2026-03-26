@@ -22,7 +22,7 @@ color:white;
 font-family:montserrat;
 font-weight: 350;
 font-size: 120%;
-margin:30px;
+margin:50px;
 a {
   color: white;            
   text-decoration: none;   
@@ -31,4 +31,46 @@ a:hover {
   color: #b2bce3;          
   text-decoration: underline;
 }
+}
+
+.interaction-content {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.photo {
+  width: 300px;
+  height: auto;
+}
+
+.question input {
+  display: none;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  text-align: justify;
+  color: #eee;
+  font-family: montserrat;
+}
+
+#question1:checked ~ .answer {
+  display: block;
+}
+
+.clickq1 {
+  font-family: montserrat;
+  font-weight: 700;
+  text-align: justify;
+  cursor: pointer;
+  color: rgb(88, 183, 193);
+  transition: color 0.3s;
+}
+
+.clickq1:hover {
+  color: #ffffff;
 }
