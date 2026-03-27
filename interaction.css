@@ -95,7 +95,7 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   position: absolute;
-  bottom: -30px;
+  bottom: -10px;
   left: 375px;
   font-family:montserrat;
   font-size: 500%;
