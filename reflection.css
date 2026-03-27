@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(7, 11, 43),rgb(62, 66, 114),rgb(131, 129, 166));
+  background-repeat: no-repeat;
+}
+
+.title {
+color:rgb(255, 255, 255);
+padding: 10px;
+font-family:montserrat;
+font-weight: 400;
+font-size: 200%;
+text-align:center;
+margin-top: 50px;
+}
+
+.topbar {
+display: flex;
+justify-content: space-evenly;
+color:white;
+font-family:montserrat;
+font-weight: 350;
+font-size: 120%;
+margin:30px;
+a {
+  color: white;            
+  text-decoration: none;   
+}
+a:hover {
+  color: #b2bce3;          
+  text-decoration: underline;
+}
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.interaction-content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 50px;
+  margin: 50px;
+  align-items: flex-start;
+}
+
+.photo {
+  width: 300px;
+  height: auto;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.question input {
+  display: none;
+}
+
+.click {
+  font-family: montserrat;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(255, 138, 193);
+  transition: color 0.3s;
+  display: block;
+}
+
+.click:hover {
+  color: #ffffff;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  text-align: justify;
+  color: #eee;
+  font-family: montserrat;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: 10px;
+  border-left: 3px solid rgb(255, 138, 193);
+}
+
+.question input:checked ~ .answer {
+  display: block;
+}
+
+.nextarrow {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: -10px;
+  left: 32%;
+  transform: translateX(-50%);
+  font-family:montserrat;
+  font-size: 500%;
+  text-decoration: none;
+  color:white;
+}
+.nextarrow:hover {
+  color: rgb(255, 138, 193);
+}
+
+.backarrow {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: -12px;
+  left: 24%;
+  transform: translateX(-50%) rotate(180deg);
+  font-family:montserrat;
+  font-size: 500%;
+  text-decoration: none;
+  color:white;
+}
+.backarrow:hover {
+  color: rgb(255, 138, 193);
+}
