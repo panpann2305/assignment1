@@ -47,8 +47,8 @@ a:hover {
 }
 
 .nexttext {
-  color:rgb(255, 255, 255);
-  background-color: rgb(205, 51, 133);
+  color:rgb(205, 51, 133);
+  background-color: rgb(255, 255, 255);
   display:inline-block;
   padding: 15px;
   font-family: montserrat;
@@ -56,12 +56,11 @@ a:hover {
   font-size: 140%;
   margin: 30px;
 a {
-  color: white;
-  background-color:rgb(205, 51, 133);  
+  color: rgb(205, 51, 133);
   text-decoration: none;   
 }
 a:hover {
-  color: rgb(255, 203, 241);
+  color: rgb(67, 108, 192);
   text-decoration: none;               
 }
 } /*I use color-change hover here as a signal that this part can be interact with.*/
