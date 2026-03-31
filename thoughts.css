@@ -30,7 +30,7 @@ a {
   text-decoration: none;   
 }
 a:hover {
-  color: #b2bce3;          
+  color: rgb(219, 150, 148);          
   text-decoration: underline;
 }
 }
