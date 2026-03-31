@@ -1,0 +1,82 @@
+/*I choose this gradient background color since the loading page of "Endless Summer"
+on PC/Laptop is similar. Also, I want to express the first impression I got from "Endless Summer"
+through this page.*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(205, 51, 133),rgb(204, 100, 156),
+  rgb(225, 173, 201),rgb(145, 147, 201),rgb(169, 140, 213));
+  background-repeat: no-repeat;
+}
+
+.title {
+color:rgb(255, 255, 255);
+padding: 10px;
+font-family:montserrat;
+font-weight: 400;
+font-size: 200%;
+text-align:center;
+margin-top: 50px;
+}
+
+.topbar {
+display: flex;
+justify-content: space-evenly;
+color:white;
+font-family:montserrat;
+font-weight: 350;
+font-size: 120%;
+margin:30px;
+a {
+  color: white;            
+  text-decoration: none;   
+}
+a:hover {
+  color: #b2bce3;          
+  text-decoration: underline;
+}
+}
+
+.text {
+  font-family: montserrat;
+  font-weight: 300;
+  font-size: 120%;
+  color: white;
+  text-align: justify;
+  margin: 20px 300px;
+}
+
+.nexttext {
+  color:rgb(255, 255, 255);
+  background-color: rgb(205, 51, 133);
+  display:inline-block;
+  padding: 15px;
+  font-family: montserrat;
+  font-weight: 400;
+  font-size: 140%;
+  margin: 30px;
+}
+
+/*I use color-change hover here as a signal that this part can be interact with.*/
+a {
+  color: white;
+  background-color:rgb(205, 51, 133);  
+  text-decoration: none;   
+}
+a:hover {
+  color: rgb(255, 203, 241);
+  text-decoration: none;               
+}
+
+.next {
+text-align: center;
+}
+
+.bottombar {
+text-align: center;
+color:rgb(255, 255, 255);
+font-family:montserrat;
+font-weight: 350;
+font-size: 120%;
+margin:30px;
+}
