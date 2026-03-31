@@ -73,8 +73,9 @@ text-align: center;
 }
 
 .photo {
-width: 650px;
-display: block;
+display: flex;
+flex-direction: row;
+justify-content: center;
 margin: 50px auto;
 }
 
