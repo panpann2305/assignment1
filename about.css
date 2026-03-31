@@ -72,6 +72,12 @@ a:hover {
 text-align: center;
 }
 
+.photo {
+width: 650px;
+display: block;
+margin: 50px auto;
+}
+
 .bottombar {
 text-align: center;
 color:rgb(255, 255, 255);
