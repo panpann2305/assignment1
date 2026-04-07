@@ -1,37 +1,37 @@
-/*I choose the dark navy gradient color as the background color for some reasons:
+/*I create a gradient background color of: dark purple, orange, dark navy, yellow, light blue for some reasons:
 1. "Endless Summer" use gradient background a lot, which I want to use this artstyle as a signature detail.
-2. "Endless Summer" didn't use dark navy in any scene, they use green, purple, orange, pink, blue for the design
-so I want to choose a different color but still match the aesthetic.
-3. In "Endless Summer", there are diferrent time of a day but none of them is at night, so I choose dark navy
-color to represent that. */
+2. I want to continue the summer journey, starting from sunset then continue to the day after's sunrise because in
+"Endless Summer", the scenes end at sunset. This is also my idea to create another endless summer which represent by the colors.*/
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(to bottom, rgb(7, 11, 43),rgb(62, 66, 114),rgb(131, 129, 166));
+  background: linear-gradient(to bottom, rgb(50, 41, 74),rgb(50, 41, 74),rgb(216, 123, 120),rgb(216, 123, 120),rgb(11, 16, 55),rgb(11, 16, 55),rgb(11, 16, 55),rgb(225, 180, 108),rgb(113, 165, 220));
   background-repeat: no-repeat;
 }
 
 .title {
 color:rgb(7, 11, 43);
-background-color: rgb(255, 255, 255);
+background-color: #ffffff;
 padding: 10px;
 font-family:montserrat;
 font-weight: 400;
 font-size: 400%;
 text-align:center;
-margin-top: 100px;
+margin: 75px 125px 0px 125px;
 }
 
+/*It will scroll to the proportional part after clicking.*/
 .topbar {
 display: flex;
 justify-content: space-evenly;
-color:white;
+color:rgb(255, 255, 255);
+padding: 15px;
 font-family:montserrat;
 font-weight: 350;
 font-size: 120%;
-margin:30px;
+margin: 30px;
 a {
-  color: white;            
+  color: rgb(255, 255, 255);            
   text-decoration: none;   
 }
 a:hover {
@@ -40,16 +40,18 @@ a:hover {
 }
 }
 
-.nextarrow {
-  display: flex;
-  justify-content: center;
-  font-family:montserrat;
-  font-size: 500%;
-  text-decoration: none;
-  color:white;
+html {
+  scroll-behavior: smooth;
 }
-.nextarrow:hover {
-  color: #b2bce3;
+
+.subtitle1 {
+color:rgb(255, 255, 255);
+padding: 10px;
+font-family:montserrat;
+font-weight: 400;
+font-size: 200%;
+text-align:center;
+margin-top: 20px;
 }
 
 .bottombar {
@@ -61,22 +63,233 @@ font-size: 120%;
 margin:30px;
 }
 
-.subtitle {
+.subtitle2 {
 text-align:center;
-color:rgb(255, 255, 255);
+color:rgb(7, 11, 43);
+background-color: #ffffff;
 font-family:montserrat;
-font-weight: 350;
+font-weight: 400;
 font-size: 200%;
-margin-top: 20px;
+margin: 50px 125px 50px 125px;
+padding: 10px;
 }
 
 .video {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0px 100px 0px 100px;
   height: 100vh;
 }
 
 video {
   width: 400px;
+}
+
+.text {
+  font-family: montserrat;
+  font-weight: 300;
+  font-size: 120%;
+  color: white;
+  text-align: justify;
+  margin: 20px 125px;
+}
+
+.move {
+  color:rgb(255, 255, 255);
+  background-color: rgb(7, 11, 43);
+  display:inline-block;
+  font-family: montserrat;
+  font-weight: 400;
+  font-size: 140%;
+  margin: 30px;
+a {
+  color:rgb(7, 11, 43);
+  background-color: #ffffff;
+  text-decoration: none; 
+  padding: 15px;
+  
+}
+a:hover {
+  color:rgb(255, 255, 255);
+  background-color: rgb(7, 11, 43);
+  text-decoration: none;  
+               
+}
+} /*I use color-change hover here as a signal that this part can be interact with.*/
+
+.next {
+text-align: center;
+}
+
+.photoap {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+margin: 25px 50px 100px 50px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.interaction-content-left {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 50px;
+  margin: 0px 50px 50px 50px;
+  align-items: flex-start;
+}
+
+.interaction-content-right {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  gap: 50px;
+  margin: 0px 50px 50px 50px;
+  align-items: flex-start;
+}
+
+.photoea {
+  width: 300px;
+  height: auto;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+}
+
+.question input {
+  display: none;
+}
+
+/*I choose text, border color that match with the image color.*/
+.click1 {
+  font-family: montserrat;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(88, 183, 193);
+  transition: color 0.3s;
+  display: block;
+}
+
+/*I use color-change hover here as a signal that this part can be interact with.
+Also, when you hover through the text, it turns white so it's clearer to read.*/
+.click1:hover {
+  color: #ffffff;
+}
+
+.answer1 {
+  display: none;
+  margin-top: 10px;
+  text-align: justify;
+  color: #eee;
+  font-family: montserrat;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: 10px;
+  border-left: 3px solid rgb(88, 183, 193); /*I put a left border
+  because it make the answer box feel neat and organise.*/
+}
+
+.question input:checked ~ .answer1 {
+  display: block;
+}
+
+.click2 {
+  font-family: montserrat;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(87, 157, 232);
+  transition: color 0.3s;
+  display: block;
+}
+
+.click2:hover {
+  color: #ffffff;
+}
+
+.answer2 {
+  display: none;
+  margin-top: 10px;
+  text-align: justify;
+  color: #eee;
+  font-family: montserrat;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: 10px;
+  border-left: 3px solid rgb(87, 157, 232); 
+}
+
+.question input:checked ~ .answer2 {
+  display: block;
+}
+
+.click3 {
+  font-family: montserrat;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(255, 152, 148);
+  transition: color 0.3s;
+  display: block;
+}
+
+.click3:hover {
+  color: #ffffff;
+}
+
+.answer3 {
+  display: none;
+  margin-top: 10px;
+  text-align: justify;
+  color: #eee;
+  font-family: montserrat;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: 10px;
+  border-left: 3px solid rgb(255, 152, 148); 
+}
+
+.question input:checked ~ .answer3 {
+  display: block;
+}
+
+.click4 {
+  font-family: montserrat;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(255, 138, 193);
+  transition: color 0.3s;
+  display: block;
+}
+
+.click4:hover {
+  color: #ffffff;
+}
+
+.answer4 {
+  display: none;
+  margin-top: 10px;
+  text-align: justify;
+  color: #eee;
+  font-family: montserrat;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: 10px;
+  border-left: 3px solid rgb(255, 138, 193);
+}
+
+.question input:checked ~ .answer4 {
+  display: block;
+}
+
+iframe {
+display: block;
+margin: 50px auto;
 }
