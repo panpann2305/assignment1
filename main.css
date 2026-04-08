@@ -36,7 +36,7 @@ a {
   text-decoration: none;   
 }
 a:hover {
-  color: #b2bce3;          
+  color: #8b7fac;          
   text-decoration: underline;
 }
 }
@@ -113,7 +113,7 @@ a {
 }
 a:hover {
   color:rgb(255, 255, 255);
-  background-color: rgb(7, 11, 43);
+  background-color: rgb(50, 41, 74);
   text-decoration: none;  
                
 }
